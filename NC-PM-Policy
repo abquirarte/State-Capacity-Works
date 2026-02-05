@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Excellence Policy | OSHR</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --nc-blue: #00447c;
+            --nc-red: #d62027;
+            --nc-light-gray: #f2f2f2;
+            --nc-dark-gray: #333333;
+            --text-color: #212529;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        /* NC.GOV Top Bar */
+        .nc-gov-bar {
+            background-color: #000;
+            color: white;
+            padding: 5px 10%;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Header & Brand */
+        header {
+            border-bottom: 4px solid var(--nc-red);
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--nc-blue);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-area span {
+            border-left: 2px solid var(--nc-blue);
+            margin-left: 15px;
+            padding-left: 15px;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* Hero / Breadcrumb */
+        .page-header {
+            background-color: var(--nc-light-gray);
+            padding: 40px 10%;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        h1 {
+            color: var(--nc-blue);
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .meta-info {
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Main Content Layout */
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            padding: 40px 10%;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--nc-blue);
+            border-bottom: 2px solid var(--nc-light-gray);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .vision-box {
+            background-color: var(--nc-blue);
+            color: white;
+            padding: 30px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .vision-box h2 {
+            color: white;
+            border: none;
+            margin-top: 0;
+        }
+
+        /* Role-Based Cards */
+        .role-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .role-card {
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 4px;
+            background: #fff;
+            transition: transform 0.2s;
+        }
+
+        .role-card:hover {
+            border-top: 4px solid var(--nc-red);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .role-card h3 {
+            color: var(--nc-blue);
+            margin-top: 0;
+        }
+
+        /* The Process Steps */
+        .step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            background: var(--nc-red);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        /* Ratings Table */
+        .ratings-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .ratings-table th {
+            background-color: var(--nc-blue);
+            color: white;
+            text-align: left;
+            padding: 12px;
+        }
+
+        .ratings-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Sidebar */
+        .sidebar-box {
+            background-color: var(--nc-light-gray);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .sidebar-box h3 {
+            margin-top: 0;
+            color: var(--nc-blue);
+            font-size: 1.2rem;
+        }
+
+        .sidebar-link {
+            display: block;
+            color: var(--nc-blue);
+            text-decoration: none;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+            font-weight: 500;
+        }
+
+        .sidebar-link:hover {
+            color: var(--nc-red);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: var(--nc-dark-gray);
+            display: block;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--nc-red);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: var(--nc-blue);
+        }
+
+        footer {
+            background: var(--nc-dark-gray);
+            color: white;
+            padding: 40px 10%;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nc-gov-bar">NC.GOV</div>
+
+    <header>
+        <a href="#" class="logo-area">
+            NORTH CAROLINA <span>Office of State Human Resources</span>
+        </a>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="breadcrumb">Home / Policies / Employee Relations</div>
+            <h1>Performance Excellence Policy</h1>
+            <div class="meta-info">
+                <span><i class="far fa-calendar-alt"></i> Effective: February 5, 2026</span> | 
+                <span><i class="fas fa-gavel"></i> Authority: N.C.G.S. § 126-4</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main-content">
+                
+                <div class="vision-box">
+                    <h2>Our Vision</h2>
+                    <p>Great government starts with great people doing great work. This policy exists to help every state employee succeed, grow, and contribute to North Carolina's mission of serving its citizens with excellence.</p>
+                    <ul style="columns: 2; list-style-type: none; padding: 0;">
+                        <li><i class="fas fa-check-circle"></i> Excellence deserves recognition</li>
+                        <li><i class="fas fa-check-circle"></i> Growth is continuous</li>
+                        <li><i class="fas fa-check-circle"></i> Clarity drives success</li>
+                        <li><i class="fas fa-check-circle"></i> Honest conversations matter</li>
+                    </ul>
+                </div>
+
+                <section>
+                    <h2>What This Means for You</h2>
+                    <p>We’ve simplified performance management to focus on people, not paperwork. Select your role to see how this policy supports you:</p>
+                    
+                    <div class="role-grid">
+                        <div class="role-card">
+                            <h3><i class="fas fa-user"></i> Employees</h3>
+                            <ul>
+                                <li>Know exactly what is expected</li>
+                                <li>Regular feedback, no surprises</li>
+                                <li>Support to grow your career</li>
+                                <li>Voice your feedback on supervision</li>
+                            </ul>
+                        </div>
+                        <div class="role-card">
+                            <h3><i class="fas fa-user-tie"></i> Supervisors</h3>
+                            <ul>
+                                <li>More coaching, less paperwork</li>
+                                <li>Clear tools and training</li>
+                                <li>Authority to recognize excellence</li>
+                                <li>Accountable for team success</li>
+                            </ul>
+                        </div>
+                        <div class="role-card">
+                            <h3><i class="fas fa-briefcase"></i> HR Professionals</h3>
+                            <ul>
+                                <li>Flexibility to solve problems</li>
+                                <li>Focus on enabling success</li>
+                                <li>Better data for better decisions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>How Performance Management Works</h2>
+                    <p>Performance management is an ongoing partnership between you and your supervisor built on four simple practices:</p>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <strong>Set Clear Goals Together</strong>
+                            <p>Agree on 3-5 challenging but achievable goals that connect your work to the agency's mission.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <strong>Talk Regularly About Progress</strong>
+                            <p>Quarterly check-ins using a simple framework: <strong>Continue</strong> (what's working), <strong>Start</strong> (new approaches), and <strong>Stop</strong> (what's not working).</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <strong>Get Rated Fairly</strong>
+                            <table class="ratings-table">
+                                <thead>
+                                    <tr>
+                                        <th>Rating</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Outstanding</strong></td>
+                                        <td>Consistently exceeds expectations</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Successful</strong></td>
+                                        <td>Meets expectations and does solid work</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Needs Improvement</strong></td>
+                                        <td>Requires support to meet expectations</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <strong>Plan Your Growth</strong>
+                            <p>Identify the skills you want to build and the career opportunities you want to pursue.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Core Requirements</h2>
+                    <ul>
+                        <li><strong>Annual Cycle:</strong> 12-month period including goal setting and quarterly check-ins.</li>
+                        <li><strong>Participation:</strong> Includes Permanent, probationary, and time-limited employees.</li>
+                        <li><strong>Calibration:</strong> Agencies must review ratings to ensure consistency across teams.</li>
+                        <li><strong>Technology:</strong> Progress is tracked via the state's intuitive performance platform.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-box">
+                    <h3>Making This Real</h3>
+                    <p>Ready to dive deeper?</p>
+                    <a href="#" class="sidebar-link">Implementation Guide (PDF)</a>
+                    <a href="#" class="sidebar-link">Find Your PM Coordinator</a>
+                    <a href="#" class="sidebar-link">Training & Resources</a>
+                    <a href="#" class="btn">Access PM Platform</a>
+                </div>
+
+                <div class="sidebar-box" style="background: white; border: 1px solid var(--border-color);">
+                    <h3>Questions?</h3>
+                    <div class="faq-item">
+                        <span class="faq-question">How often should I meet?</span>
+                        <small>At least quarterly, or whenever you need support.</small>
+                    </div>
+                    <div class="faq-item">
+                        <span class="faq-question">What if I disagree with my rating?</span>
+                        <small>You can request a formal review through your agency's process.</small>
+                    </div>
+                    <div class="faq-item">
+                        <span class="faq-question">Can ratings affect pay?</span>
+                        <small>Yes. Ratings are used for pay, promotions, and recognition.</small>
+                    </div>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Related Policies</h3>
+                    <a href="#" class="sidebar-link">Managing Performance Issues</a>
+                    <a href="#" class="sidebar-link">Rewarding Exemplary Work</a>
+                    <a href="#" class="sidebar-link">Learning & Development</a>
+                    <a href="#" class="sidebar-link">Employee Grievance Policy</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div style="text-align: center;">
+            <p><strong>North Carolina Office of State Human Resources</strong></p>
+            <p>1331 Mail Service Center | Raleigh, NC 27699-1331</p>
+            <p>&copy; 2026 State of North Carolina. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
